@@ -1,0 +1,63 @@
+body {
+	height: 100%;
+	margin: 0;
+}
+#container {
+	background-color: #7d7d7d;
+	background-position: center;
+	text-align: center;
+	height: 200px;
+	padding: 10px
+}
+#container::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+#text1 {
+	font-size: 40px;
+	color: #eee;
+}
+#forText {
+	height: 35px;
+	width: 700px
+}
+#addClick {
+	border: 3px black;
+	width: 100px;
+	height: 35px;
+	cursor: pointer;
+}
+#addClick:hover {
+	background-color: #525252;
+	color: white
+}
+ul li{
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	background: #eee;
+	font-size: 18px;
+	user-select: none;
+}
+ul li:hover {
+	  background: #ddd
+}
+.checked {
+	text-decoration: line-through;
+}
+.checked::before{
+	content: "";
+	position: absolute;
+}
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 12px;
+	background-color: #969696;
+}
+.close:hover {
+	background-color: #707070;
+	color: black;
+}
